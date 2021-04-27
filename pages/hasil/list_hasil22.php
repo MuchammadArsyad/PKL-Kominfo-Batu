@@ -10,7 +10,7 @@ include "koneksi.php";
                 <th bgcolor="#ffffff">Judul</th>
                 <th bgcolor="#ffffff" width="100">View</th>
                 <th bgcolor="#ffffff" width="100">Hapus</th>
-                <th bgcolor="#ffffff" width="30">Persetujuan</th>
+                <th bgcolor="#ffffff" width="100">Persetujuan</th>
             </tr>
     <?php
             $query = mysqli_query($koneksi,"SELECT * FROM data_file ORDER BY id DESC");
@@ -23,8 +23,10 @@ include "koneksi.php";
             <th bgcolor="#ffffff"><a href="pages/upload/hapus.php?id=<?php echo $data['id'];?>">Hapus File</a></th>
             <!-- <th bgcolor="#ffffff"><a href="pages/persetujuan/setuju.php?id=<?php echo $data['id'];?>">Ya </a></th>
             <th bgcolor="#ffffff"><a href="pages/persetujuan/tidak.php?id=<?php echo $data['id'];?>">Tidak</a></th> -->
-            <td><input type="radio" name="jawaban" value="Sulit"/>Ya</td>
-            <td><input type="radio" name="jawaban" value="Sulit"/>Tidak</td>
+            <th bgcolor="#ffffff"><input type="radio" name="jawaban" value="Sulit"/>Ya
+                <input type="radio" name="jawaban" value="Sulit"/>Tidak
+            </th>
+            <!-- <th bgcolor="#ffffff"><input type="radio" name="jawaban" value="Sulit"/>Tidak</th> -->
         </tr>
     <?php
 }

@@ -103,7 +103,7 @@
           <li class="">
             <a class="" href="halaman_admin.php?module=upload_berkas">
               <!-- <i class="fa fa-file"></i> -->
-              <span>Uploadsssss</span>
+              <span>Uploads</span>
               </a>
           </li>
          
